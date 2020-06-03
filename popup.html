@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>Welcome to EduCode</title>
+    <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand&display=swap" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <style>
+        /* Modal Structure */
+ 
+        html,
+        body {
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            margin: 0;
+            min-height: 180px;
+            padding: 0;
+            width: 370px;
+        }
+ 
+        h1 {
+            font-family: "Just Another Hand", monospace;
+            font-size: 40px;
+            font-weight: 400;
+            margin: 0;
+            color: #2f5876;
+        }
+ 
+        a:link,
+        a:visited {
+            color: #000000;
+            outline: 0;
+            text-decoration: none;
+        }
+ 
+        img {
+            width: 40px;
+        }
+ 
+        .modal-header {
+            align-items: center;
+            border-bottom: 0.5px solid #dadada;
+        }
+ 
+        .modal-content {
+            padding: 0 22px;
+        }
+ 
+        .modal-icons {
+            border-top: 1px solid #dadada;
+            height: 50px;
+            width: 100%;
+        }
+ 
+        .logo {
+            padding: 16px;
+        }
+ 
+        .logo-icon {
+            vertical-align: top;
+            margin-right: 10px;
+        }
+ 
+        .version {
+            color: #444;
+            font-size: 18px;
+        }
+ 
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 22px;
+        }
+ 
+        .flex {
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
+            width: 120px;
+        }
+ 
+        .flex:hover {
+            opacity: 0.4;
+        }
+ 
+        .flex .fa {
+            font-size: 40px;
+            color: #2f5876;
+        }
+        .dropbtn {
+            background-color: white;
+            color: white;
+            border-top: 0px solid #dadada;
+            height: 50px;
+            padding: 0px;
+            font-size: 16px;
+            border: none;
+            }
+ 
+            .dropdown {
+            position: relative;
+            display: inline-block;
+            }
+ 
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: lightblue;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
+ 
+            .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+ 
+        .dropdown-content a:hover {background-color: rgba(73, 84, 243, 0.2);}
+ 
+        .dropdown:hover .dropdown-content {display: block;}
+ 
+        .dropdown:hover .dropbtn {background-color: white; opacity: 0.6; transition: opacity 0.2s ease-in-out;}
+ 
+ 
+    </style>
+    <script src="popup.js"></script>
+</head>
+ 
+<body>
+    <div class="modal-header">
+        <h1 class="logo">
+            <img class="logo-icon" src="images/EduCode.png" alt="EduCode" />Welcome to EduCode
+            <span class="version">(1.0.0)</span>
+            <img class="logo-icon" src="plane.png" alt="takeoff">
+        </h1>
+    </div>
+    <div class="modal-content">
+        <p>Explore the world of Computer Science, learn new languages, and have fun!</p>
+    </div>
+    <div class="modal-icons">
+        <div class="flex-container">
+            <div class="dropdown">
+                <button class="dropbtn"><img class="logo-icon" src="Java.png" alt="EduCode" /></button>
+                <div class="dropdown-content">
+                  <a href="https://www.w3schools.com/java/java_intro.asp" target="_blank">What is Java?</a>
+                  <a href="#">What is it used for?</a>
+                  <a href="https://www.codecademy.com/learn/learn-java">Tutorials</a>
+                  <a href="https://codecombat.com/play">Games</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><img class="logo-icon" src="C.png" alt="EduCode" /></button>
+                <div class="dropdown-content">
+                  <a href="#">What is C?</a>
+                  <a href="#">What is it used for?</a>
+                  <a href="#">Tutorials</a>
+                  <a href="#">Games</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><img class="logo-icon" src="python.png" alt="EduCode" /></button>
+                <div class="dropdown-content">
+                  <a href="https://www.w3schools.com/python/python_intro.asp">What is Python?</a>
+                  <a href="https://www.codecademy.com/learn/paths/computer-science?utm_source=google&utm_medium=cpc&utm_campaign=US_Brand_Core_Exact&utm_content=US_Brand_Core_Exact&utm_term=code%20academy_computer_science_sitelink&d=c&utm_source=google&utm_medium=cpc&utm_campaign=US_Brand_Core_Exact&utm_content=US_Brand_Core_Exact&utm_term=code%20academy&d=c&gclid=CjwKCAiA-P7xBRAvEiwAow-VaR8JpPomIScNlfYaDSlPe5EUdFClB6e8rp1RyxhN_IRgHQ0r7WLaxhoCJroQAvD_BwE">What is it used for?</a>
+                  <a href="https://www.w3schools.com/python/default.asp                  ">Tutorials</a>
+                  <a href="https://www.hackerrank.com/domains/python">Games</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><img class="logo-icon" src="JS.png" alt="EduCode" /></button>
+                <div class="dropdown-content">
+                  <a href="https://www.w3schools.com/js/js_intro.asp" target="_blank">What is JavaScript?</a>
+                  <a href="https://www.codecademy.com/learn/paths/web-development?utm_source=google&utm_medium=cpc&utm_campaign=US_Brand_Core_Exact&utm_content=US_Brand_Core_Exact&utm_term=code%20academy_web_development_sitelink&d=c&utm_source=google&utm_medium=cpc&utm_campaign=US_Brand_Core_Exact&utm_content=US_Brand_Core_Exact&utm_term=code%20academy&d=c&gclid=CjwKCAiA-P7xBRAvEiwAow-VaUZRq-xR0CLlVbmVji2hiaNG25mxiGoHy9jm7cxT_W4dH1KBQwDoRBoCAcgQAvD_BwE                  " target="_blank">What is it used for?</a>
+                  <a href="https://www.w3schools.com/js/" target="_blank">Tutorials</a>
+                  <a href="https://www.codingame.com/ide/puzzle/onboarding" target="_blank">Games</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><img class="logo-icon" src="Cpp.png" alt="EduCode" /></button>
+                <div class="dropdown-content">
+                  <a href="#">What is C++?</a>
+                  <a href="#">What is it used for?</a>
+                  <a href="#">Tutorials</a>
+                  <a href="#">Games</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><img class="logo-icon" src="GitHub.png" alt="EduCode" /></button>
+                <div class="dropdown-content">
+                    <a href="https://github.com/" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+ 
+</html>
